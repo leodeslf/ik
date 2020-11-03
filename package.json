@@ -1,0 +1,30 @@
+{
+  "name": "ik",
+  "version": "1.0.0",
+  "description": "Inverse kinematic module and joints",
+  "main": "IK.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leodeslf/ik.git"
+  },
+  "keywords": [
+    "inverse-kinematics"
+  ],
+  "author": "Leonardo de S.L.F",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leodeslf/ik/issues"
+  },
+  "homepage": "https://github.com/leodeslf/ik#readme",
+  "dependencies": {
+    "@leodeslf/vec.js": "^1.1.5"
+  },
+  "devDependencies": {
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0"
+  }
+}
