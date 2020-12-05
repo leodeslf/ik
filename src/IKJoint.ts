@@ -1,13 +1,20 @@
-import { Vec2 } from "@leodeslf/vec.js";
+import Vec2 from "./vec";
 
 export default class IKJoint {
-  constructor(length, target) {
-    this.base = new Vec2(0, 0);
-    this.end = new Vec2(0, 0);
-    this.angle = 0;
-    this.length = length;
+  base: Vec2;
+  end: Vec2;
+  anchor: Vec2;
+  target: Vec2;
+  length: number;
+  angle: number;
+
+  constructor(length: number, target: Vec2) {
+    this.base = new Vec2();
+    this.end = new Vec2();
+    this.anchor = new Vec2();
     this.target = target;
-    this.anchor = false;
+    this.length = length;
+    this.angle = 0;
   }
 
   reach() {
@@ -20,10 +27,8 @@ export default class IKJoint {
   }
 
   fix() {
-    if (this.anchor) {
-      this.base.copy(this.anchor);
-      this.update();
-    }
+    this.base.copy(this.anchor);
+    this.update();
   }
 
   update() {
