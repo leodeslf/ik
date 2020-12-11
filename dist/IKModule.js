@@ -1,5 +1,5 @@
 "use strict";
-import IKJoint from "./IKJoint";
+import IKJoint from "./IKJoint.js";
 export default class IKModule {
     constructor(joints, length, target, anchor) {
         this.body = [];

@@ -4,7 +4,7 @@ Inverse kinematic module and joints.
 
 ## Example
 
-Taking mouse position as module target.
+Taking mouse position as module target, live [demo here](https://codepen.io/leodeslf/project/full/XYnBQg).
 
 `index.html`
 
