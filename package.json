@@ -1,11 +1,11 @@
 {
-  "name": "ik",
+  "name": "inverse-kinematics",
   "version": "1.0.0",
   "description": "Inverse kinematic module and joints",
-  "main": "dist/IK.js",
+  "main": "dist/IKModule.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leodeslf/ik.git"
+    "url": "git+https://github.com/leodeslf/inverse-kinematics.git"
   },
   "keywords": [
     "inverse-kinematics"
@@ -13,11 +13,7 @@
   "author": "Leonardo de S.L.F",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leodeslf/ik/issues"
+    "url": "https://github.com/leodeslf/inverse-kinematics/issues"
   },
-  "homepage": "https://github.com/leodeslf/ik#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "typescript": "^4.1.2"
-  }
+  "homepage": "https://github.com/leodeslf/inverse-kinematics#readme"
 }

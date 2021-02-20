@@ -5,9 +5,11 @@ import Vec2 from "./vec";
 
 export default class IKModule {
   body: IKJoint[];
+  joints: number;
 
   constructor(joints: number, length: number, target: Vec2, anchor: Vec2) {
     this.body = [];
+    this.joints = joints;
     // Add joints to module body.
     // Targets.
     for (let i = 0; i < joints; i++) {
@@ -37,6 +39,10 @@ export default class IKModule {
         this.body[i].fix();
       }
     }
+  }
+
+  get anchor(): Vec2 {
+    return this.body[this.joints - 1].anchor;
   }
 
   set target(target: Vec2) {

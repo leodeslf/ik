@@ -1,10 +1,10 @@
-# IK
+# Inverse Kinematics
 
 Inverse kinematic module and joints.
 
-## Example
+## Demo 📌
 
-Taking mouse position as module target, live [demo here](https://codepen.io/leodeslf/project/full/XYnBQg).
+Live [demo here](https://codepen.io/leodeslf/project/full/XYnBQg "Codepen").
 
 `index.html`
 
@@ -12,7 +12,6 @@ Taking mouse position as module target, live [demo here](https://codepen.io/leod
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="vec.js" type="module"></script>
     <script src="index.js" type="module"></script>
   </head>
   <body style="margin: 0; display: flex;">

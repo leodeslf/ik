@@ -1,4 +1,4 @@
-import Vec2 from "./vec.js";
+import Vec2 from "./vec";
 export default class IKJoint {
     constructor(length, target) {
         this.base = new Vec2();

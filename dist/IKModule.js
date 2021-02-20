@@ -1,8 +1,9 @@
 "use strict";
-import IKJoint from "./IKJoint.js";
+import IKJoint from "./IKJoint";
 export default class IKModule {
     constructor(joints, length, target, anchor) {
         this.body = [];
+        this.joints = joints;
         for (let i = 0; i < joints; i++) {
             if (i === 0)
                 this.body[i] = new IKJoint(length, target);
@@ -25,6 +26,9 @@ export default class IKModule {
                 this.body[i].fix();
             }
         }
+    }
+    get anchor() {
+        return this.body[this.joints - 1].anchor;
     }
     set target(target) {
         this.body[0].target = target;
